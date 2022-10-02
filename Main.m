@@ -8,9 +8,7 @@ saveFlag = 0;
 %% Optimzated parameter for prediction 
 %% load subject experiment data
 
-fileDir         = 'C:\Users\Yihui Zhao\Desktop\Direct_collocation_for_MTU_parameter_estimation\ExampleData';
-filePath        = strcat(fileDir,'\','eg1','.mat');
-load(filePath)
+load('eg1.mat');
 
 % Data reollocation
 time  = redacted_wristData.time;

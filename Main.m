@@ -29,7 +29,7 @@ t = t';
 e = [eFCR,eFCU,eECRL,eECRB,eECU];
 
 %% Direct collocation methods setup
-gridN = 201;                % number of grid point
+gridN = 200;                % number of grid point
 duration = t(end)-t(1);     % time in sec
 h = duration/(gridN-1);     % time inverval between nodes
 dc_time = t(1):h:t(end);    % list of time points

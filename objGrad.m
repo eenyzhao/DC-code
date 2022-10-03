@@ -35,9 +35,8 @@ for i = 1:gridN
     emg(i,:)  = x(indemg);
     para(i,:) = x(indpara);
         
-%     G(indtheta) = -2*1000*h*(meas_theta(i)-theta(i));   % gradient with respect to theta
     G(indtheta) = (-2*(meas_theta(i)-theta(i)))/length(meas_theta);   % gradient with respect to theta
-%     G(indemg)   = -1000*h*2*(e(i,:)-emg(i,:));        % gradient with respect to activation
+%     G(indemg)   = -1000*h*2*(e(i,:)-emg(i,:));     % gradient with respect to input EMG
 %     G(indact)   = 1000*h*2*(act(i,:) - emg(i,:));  % gradient with respect to activation
 %     G(indemg)   = -1000*h*2*(act(i,:) - emg(i,:)); % gradient with respect to activation
 end

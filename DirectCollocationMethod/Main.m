@@ -8,8 +8,7 @@ saveFlag = 0;
 %% Optimzated parameter for prediction 
 %% load subject experiment data
 
-subject         = 'S6';
-motion          = 'WFE';
+subject         = 'S1';
 Opimisation     = 'Opti';
 fileDir         = '...\ExampleData';
 filePath    = strcat(fileDir,'\',subject,'\','_',Opimisation,'.mat');

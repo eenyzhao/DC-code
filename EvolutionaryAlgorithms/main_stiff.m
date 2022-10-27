@@ -12,8 +12,7 @@ saveFlag  = 1; % save data
 
 
 %% load subject experiment data
-subject         = 'S6';
-motion          = 'WFE';
+subject         = 'S1';
 Opimisation     = 'Opti';
 fileDir         = '...\ExampleData';
 filePath    = strcat(fileDir,'\',subject,'\','_',Opimisation,'.mat');

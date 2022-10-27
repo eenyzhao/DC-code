@@ -6,7 +6,7 @@ bodyHeight = 171;            % cm -- subject's height cm
 m = bodyWeight*0.0065;       % --> hand mass (Kg)
 g = 9.81;                    % --> gravity coefficient (m/s^2)
 
-l = 0.08;                    % -- hand length (measured)
+l = (4.11 + 0.026*bodyWeight + 0.033*bodyHeight)/100;                    % -- hand length (measured)
 J = (-13.68 + 0.088*bodyWeight + 0.092*bodyHeight)/10000;% --> inertia of hand
 inertia = J + m*l^2;         % --> inertia around joint rotation center
 

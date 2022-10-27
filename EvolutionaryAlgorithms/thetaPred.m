@@ -4,11 +4,10 @@ function [Lmt,Lm,ddtheta,fv]= thetaPred(theta,dtheta,a,para,vmt)
 %% Declare hand parameters;
 bodyWeight = 88;             % Kg
 bodyHeight = 178;            % cm
-% m = bodyWeight*0.0065;       % --> hand mass (Kg)
-m = 0.589;
+m = bodyWeight*0.0065;     % --> hand mass (Kg)
 g = 9.81;                    % --> gravity coefficient (m/s^2)
-%CoM : l = 4.11 + 0.026*bodyweight(kg) + 0.033*height(cm) from 3rd dactylion
-l = (4.11 + 0.026*bodyWeight + 0.033*bodyHeight)/100;    % --> hand length (m)
+%
+l = 0.08;                    % --> hand length (m)
 J = (-13.68 + 0.088*bodyWeight + 0.092*bodyHeight)/10000;% --> inertia of hand
 inertia = J + m*l^2;         % --> inertia around joint rotation center
 %% allocate the parameter
